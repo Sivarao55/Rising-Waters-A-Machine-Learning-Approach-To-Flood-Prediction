@@ -1,0 +1,37 @@
+predict.html:<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            text-align: center; /* Center align the text */
+        }
+        h3 {
+            font-size: 24px; /* Larger font size for headings */
+        }
+        .flood-warning {
+            color: red; /* Red for flood warnings */
+        }
+        .no-flood {
+            color: green; /* Green for no flood risk */
+        }
+        a {
+            display: inline-block; /* Make link a block for better spacing */
+            margin-top: 20px;
+            color: blue; /* Change link color */
+            text-decoration: underline; /* Underline the link */
+        }
+    </style>
+</head>
+<body>
+    <h1>Flood Prediction Result</h1>
+    <h2>Your Prediction: {{ Prediction }}</h2>
+
+
+    
+    <a href="/">Back to Submission</a>
+</body>
+</html>

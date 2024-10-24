@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Flood Prediction Data Submission</h1>
+    <form method="POST" action="/predict">
+        <h2>Input Weather Data</h2>
+        <label for="temp">Temperature:</label>
+        <input type="text" id="temp" name="temp" required><br>
+
+        <label for="humidity">Humidity:</label>
+        <input type="text" id="humidity" name="humidity" required><br>
+
+        <label for="cloud_cover">Cloud Cover:</label>
+        <input type="text" id="cloud_cover" name="cloud_cover" required><br>
+
+        <label for="annual">Annual:</label>
+        <input type="text" id="annual" name="annual" required><br>
+
+        <label for="jan_feb">Jan-Feb:</label>
+        <input type="text" id="jan_feb" name="jan_feb" required><br>
+
+        <label for="mar_may">Mar-May:</label>
+        <input type="text" id="mar_may" name="mar_may" required><br>
+
+        <label for="jun_sep">Jun-Sep:</label>
+        <input type="text" id="jun_sep" name="jun_sep" required><br>
+
+        <label for="oct_dec">Oct-Dec:</label>
+        <input type="text" id="oct_dec" name="oct_dec" required><br>
+
+        <label for="avg_june">Average June:</label>
+        <input type="text" id="avg_june" name="avg_june" required><br>
+
+        <label for="sub">Sub:</label>
+        <input type="text" id="sub" name="sub" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+</html>
